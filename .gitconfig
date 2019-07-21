@@ -1,0 +1,28 @@
+[user]
+	user = pharuq
+	email = ryoma.shindo@repro.io
+	name = Ryoma Shindo
+[color]
+	ui = auto
+[core]
+	excludesfile = /Users/ryomashindo/.gitignore_global
+[alias]
+  open-pr = "!f() { hub browse -- `git log --merges --oneline --reverse --ancestry-path $1...master | grep 'Merge pull request #' | head -n 1 | cut -f5 -d' ' | sed -e 's%#%pull/%'`; }; f"
+
+  # add
+  a = add                           # add
+
+  # checkout
+  co = checkout                     # checkout
+
+  # status
+  s = status
+  st = status
+
+  # diff
+  d = diff                          # diff unstaged changes
+  dc = diff --cached                # diff staged changes
+  last = diff HEAD^                 # diff last committed change
+
+[ghq]
+	root = ~/src

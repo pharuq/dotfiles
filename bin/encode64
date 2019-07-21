@@ -1,0 +1,5 @@
+#!/usr/bin/env ruby
+require "base64";
+if ARGV[0] != nil then
+        puts Base64.urlsafe_encode64(ARGV[0]).delete('=');
+end

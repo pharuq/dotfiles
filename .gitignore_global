@@ -1,0 +1,8 @@
+.envrc
+.DS_Store
+.ruby-version
+.vscode/*
+.generators
+.idea/
+.rakeTasks
+.tags
