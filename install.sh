@@ -16,6 +16,9 @@ for f in .??*; do
     ln -snfv $DOT_DIRECTORY/${f} ${HOME}
 done
 
+# homebrew
+brew bundle
+
 # bin
 cd $DOT_DIRECTORY/bin
 for f in *; do

@@ -11,6 +11,11 @@
 
   # add
   a = add                           # add
+  aa = add -A                       # add all files
+
+  # commit
+  c = commit
+  cm = commit -m
 
   # checkout
   co = checkout                     # checkout
@@ -23,6 +28,9 @@
   d = diff                          # diff unstaged changes
   dc = diff --cached                # diff staged changes
   last = diff HEAD^                 # diff last committed change
+
+  # log
+  graph = log --graph --date=short --decorate=short --pretty=format:'%Cgreen%h %Creset%cd %Cblue%cn %Cred%d %Creset%s'
 
 [ghq]
 	root = ~/src
