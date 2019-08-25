@@ -41,5 +41,13 @@
       "fileName": ".tags"
     },
     "workbench.editor.closeEmptyGroups": false,
-    "search.location": "panel"
+    "search.location": "panel",
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/.tags": true
+    }
 }
