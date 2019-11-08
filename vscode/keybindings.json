@@ -209,5 +209,19 @@
         "key": "ctrl+h",
         "command": "-extension.dash.specific",
         "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+cmd+m",
+        "command": "workbench.action.toggleMaximizedPanel"
+    },
+    {
+        "key": "ctrl+t",
+        "command": "editor.action.revealDefinition",
+        "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
+    },
+    {
+        "key": "ctrl+t",
+        "command": "-editor.action.transposeLetters",
+        "when": "textInputFocus && !editorReadonly"
     }
 ]
